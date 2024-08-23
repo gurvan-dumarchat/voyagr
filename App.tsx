@@ -1,4 +1,5 @@
 import { StyleSheet, View } from "react-native";
+import Destination from "./components/Destination";
 import { Header } from "./components/Header";
 import { Trendings } from "./components/Trendings";
 import { defaultStyles } from "./styles/main";
@@ -8,6 +9,7 @@ export default function App() {
     <View style={styles.global}>
       <Header></Header>
       <Trendings></Trendings>
+      <Destination></Destination>
     </View>
   );
 }
