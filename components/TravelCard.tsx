@@ -2,7 +2,7 @@ import { Heart } from "lucide-react-native";
 import { ImageBackground, StyleSheet, Text, View } from "react-native";
 import { defaultStyles } from "../styles/main";
 
-type CardProps = {
+export type CardProps = {
   img: any;
   title: string;
   price: number;
