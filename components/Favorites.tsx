@@ -2,7 +2,8 @@ import { StyleSheet, Text, View } from "react-native";
 import { defaultStyles } from "../styles/main";
 import type { CardProps } from "./TravelCard";
 import TravelMapper from "./TravelMapper";
-const trendingsData: CardProps[] = [
+
+const favoritesData: CardProps[] = [
   {
     img: require("../assets/maldives.png"),
     title: "Maldives",
@@ -10,29 +11,29 @@ const trendingsData: CardProps[] = [
     liked: true,
   },
   {
-    img: require("../assets/autriche.png"),
-    title: "Autriche",
-    price: 2356,
-    liked: false,
+    img: require("../assets/suisse.png"),
+    title: "Suisse",
+    price: 2389,
+    liked: true,
   },
   {
-    img: require("../assets/chine.png"),
-    title: "Chine",
-    price: 4529,
-    liked: false,
+    img: require("../assets/ibiza.png"),
+    title: "Ibiza",
+    price: 798,
+    liked: true,
   },
 ];
 
-export const Trendings = () => {
+const Favorites = () => {
   return (
     <View style={styles.container}>
-      <Text style={[defaultStyles.heading5, defaultStyles.black]}>
-        Populaires
-      </Text>
-      <TravelMapper trendingsData={trendingsData}></TravelMapper>
+      <Text style={defaultStyles.heading5}>Favoris</Text>
+      <TravelMapper trendingsData={favoritesData}></TravelMapper>
     </View>
   );
 };
+
+export default Favorites;
 
 const styles = StyleSheet.create({
   container: {
