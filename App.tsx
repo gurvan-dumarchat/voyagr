@@ -1,27 +1,23 @@
 import { StyleSheet, View } from "react-native";
 import { Header } from "./components/Header";
+import { Trendings } from "./components/Trendings";
+import { defaultStyles } from "./styles/main";
 
 export default function App() {
   return (
-    <View>
+    <View style={styles.global}>
       <Header></Header>
+      <Trendings></Trendings>
     </View>
   );
 }
 
-export const defaultStyles = StyleSheet.create({
-  black: {
-    color: "#171717",
-  },
-  white: {
-    color: "#EBEBEB",
-  },
-  heading2: {
-    fontSize: 48.83,
-    fontWeight: "bold",
-  },
-  heading5: {
-    fontSize: 25,
-    fontWeight: "medium",
+const styles = StyleSheet.create({
+  global: {
+    display: "flex",
+    flexDirection: "column",
+    gap: 10,
+    backgroundColor: defaultStyles.white.color,
+    minHeight: "100%",
   },
 });

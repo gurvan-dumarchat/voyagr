@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from "react-native";
-import { defaultStyles } from "../App";
+import { defaultStyles } from "../styles/main";
 
 export const Header = () => {
   return (
