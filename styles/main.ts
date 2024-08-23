@@ -16,6 +16,9 @@ export const defaultStyles = StyleSheet.create({
   clearWhite: {
     color: "#FDFDFD",
   },
+  blue: {
+    color: "#09A8D4",
+  },
   heading2: {
     fontSize: 48.83,
     fontWeight: "bold",
